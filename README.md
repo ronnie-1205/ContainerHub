@@ -2,6 +2,8 @@
 
 A minimal, dark-themed **Streamlit dashboard** for easily accessing services running on your local Docker containers — no more remembering random ports. Designed to be accessed securely using **Tailscale**, with auto-refreshing links and a simple login screen.
 
+> 💡 **Note:** You don't need to use Tailscale for this to work. The dashboard simply uses the URLs from your `links.json` file. You can use `localhost`, your LAN IP, a domain name, or a reverse proxy like NGINX — anything that lets your device reach the services.
+
 ---
 
 ## 📦 Features
