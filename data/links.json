@@ -1,0 +1,5 @@
+{
+  "Grafana": "http://your-hostname.ts.net:3000",
+  "Portainer": "http://your-hostname.ts.net:9000",
+  "Ollama API": "100.x.x.x:11434"
+}

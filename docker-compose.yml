@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  dashboard:
+    image: python:3.11
+    command: bash -c "pip install -r /app/requirements.txt && streamlit run /app/app.py --server.port=8501 --server.enableCORS=false --server.headless=true"
+    volumes:
+      - ./app.py:/app/app.py
+      - ./requirements.txt:/app/requirements.txt
+      - ./data:/app/data
+    ports:
+      - "8501:8501"
+    working_dir: /app
+    environment:
+      - PYTHONUNBUFFERED=1
